@@ -4,7 +4,7 @@ Emulate "profiles" in Node by selecting a profile from a group of valid package.
 
 ## Alternative profiles
 
-Profiles are individual valid `package.json` files located in ./packages' and named `<profile>.package.json`.
+Profiles are individual valid `package.json` files located in `./packages/` and named `<profile>.package.json`.
 
 ## Example usage
 
