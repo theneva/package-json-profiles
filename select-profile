@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-
 var fs = require('fs');
-var exec = require('child_process').exec;
 
 if (process.argv.length < 3) {
 	console.log('Too few arguments; please specify a profile');
