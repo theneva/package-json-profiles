@@ -1,0 +1,7 @@
+{
+	"name": "some-app",
+	"profile": "local",
+	"scripts": {
+		"start": "node ./server-local.js"
+	}
+}

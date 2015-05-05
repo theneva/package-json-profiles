@@ -1,0 +1,7 @@
+{
+	"name": "some-app",
+	"profile": "remote",
+	"scripts": {
+		"start": "node ./server-remote.js"
+	}
+}

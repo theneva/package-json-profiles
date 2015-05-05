@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var exec = require('child_process').exec;
+
+if (process.argv.length < 3) {
+	console.log('Too few arguments; please specify a profile');
+	return;
+}
+
+var profile = process.argv[2];
+var profileFilePath = './packages/' + profile + '.package.json';
+
+if (!fs.existsSync(profileFilePath)) {
+	console.log('No file matching that profile exists (expected ', profileFilePath, ')');
+	return;
+}
+
+var matchingPackageFile = fs.readFileSync(profileFilePath);
+fs.writeFileSync('./package.json', matchingPackageFile);
